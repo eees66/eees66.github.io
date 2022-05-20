@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+      img{width:130px}
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      count=0;
+      function cookie_click(){
+        span=document.getElementById("cookie_count");
+        count++;
+        span.textContent=count;
+
+      }
+      function ojisann() {
+      setInterval(auto,1000);
+
+
+      }
+      function auto(1){
+        count+=1;
+        span=document.getElementById("cookie_count");
+        span.textContent=count;
+      }
+
+    </script>
+    <p><span id="cookie_count"></span>人</p>
+    <img onclick="cookie_click()" src="hage.jpg" alt="">
+    <ul>
+      <li onclick="ojisann()">おじさん</li>
+      <li onclick="auto()">つよいひと</li>
+    </ul>
+  </body>
+</html>
